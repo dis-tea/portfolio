@@ -169,13 +169,19 @@ img {
   margin-top: 5rem;
 }
 
-
-
 #details{
   text-align: center;
   font-size: 1.75rem;
   font-weight: 500;
 }
+
+
+#hello-hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
 
 /* ABOUT */
 .about__container {
@@ -388,6 +394,15 @@ input[type=submit]:hover {
 
   .home {
     height: 800px;
+  }
+  
+  #hello {
+      font-size: 6rem !important; 
+      margin-top: 2rem !important; 
+  }
+  
+  #details {
+      font-size: 1.5rem; 
   }
 }
 

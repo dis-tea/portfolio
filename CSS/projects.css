@@ -155,6 +155,43 @@ img {
     justify-content: center;
 }
 
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent; /* Adjust the size as needed */
+  border-right: 20px solid transparent; /* Adjust the size as needed */
+  border-top: 40px solid rgb(255, 163, 163);
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1000;
+}
+
+.arrow.fade {
+  opacity: 0;
+}
+
+
+/* Add bounce animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-20px);
+  }
+  60% {
+      transform: translateY(-10px);
+  }
+}
+
+.bounce {
+  animation: bounce 1.5s infinite;
+}
+
 .grid-container {
     margin: 0;
     padding: 1em 0 1em 0;

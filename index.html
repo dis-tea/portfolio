@@ -8,7 +8,7 @@
 
         <!--NAV TOGGLE ICON!-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        
+
         <!-- CSS -->
         <link rel="stylesheet" href="CSS/index.css">
         <title>Homepage</title>
@@ -17,7 +17,7 @@
         <!--HEADER -->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">
+                <a href="index.html" class="nav__logo">
                     <img src="images/DM.png" alt="logo image">
                 </a>
                 <div class="nav__menu" id="nav-menu">
@@ -29,10 +29,10 @@
                             <a href="#about" class="nav__link">About</a>
                         </li>
                         <li class="nav__item">
-                            <a href="projects.html" class="nav__link">Projects</a>
+                            <a href="#contact" class="nav__link">Contact</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact</a>
+                            <a href="projects.html" class="nav__link">Projects</a>
                         </li>
                     </ul>
                     <!-- Close button -->
@@ -51,7 +51,7 @@
         <main class="main">
             <!--HOME -->
             <section class="home section" id="home">
-                <h1 id="Hello">Hello!</h1>
+                <h1 id="Hello"><span class="auto-type">Hello!</span></h1>
                 <p id="details">I am a sophomore at Duke Kunshan University
                 <br>
                 studying Computation and Design with a Digital Media focus</p>
@@ -92,7 +92,7 @@
                         </p>
                     </div>
                     <div class="container">
-                        <form action="https://formspree.io/f/xyyqrbgd" method="POST"></form>
+                        <form action="form-process.php" method="POST"></form>
 
                         <label for="fname"></label>
                         <input type="text" id="fname" name="firstname" placeholder="Your name">
@@ -122,5 +122,14 @@
             </div>
         </footer>
         <script src="JS/index.js"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed(".auto-type", {
+                strings: ["Hello!","Halo!","你好!"],
+                typeSpeed: 150,
+                backSpeed: 150,
+                loop: true
+            })
+        </script>
     </body>
 </html>

@@ -329,6 +329,16 @@ img {
     width: 500px;
   }
 
+  #city_hyperlink a{
+    color: rgb(255, 163, 163);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  #city_hyperlink a:hover{
+    color: palevioletred;
+  }
+
   .footer__container {
     padding-block: 5.5rem 3rem;
   }
