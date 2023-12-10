@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Broswer small icon on tab-->
+        <link rel="shortcut icon" href="images/DM.png" type="image/x-icon">
+
+        <!--NAV TOGGLE ICON!-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="CSS/space_shooter.css">
+
+        <title>Space Shooters</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="images/DM.png" alt="logo image">
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html#home" class="nav__link">Home</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="index.html#about" class="nav__link">About</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="projects.html" class="nav__link active-link">Projects</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="index.html#contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- Close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-apps-2-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!-- MAIN -->
+        <main class="main">
+            <!-- ABOUT -->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h1 class="section__title">Space Shooters</h1>
+                        <h1>CS101 Group Project</h1>
+                        <p style="font-style: italic;">Feb 2023</p>
+                        <br>
+
+                        <p class="about__description">
+                            I am worked on a group project in my Computer Science 101 course. We created a two-player pixel shooter game, inspired by the Arcade class, Space Invaders. 
+                            During the project, I was mainly resposible for designing the game. I created and gathered the assets and coding them into the game. I also designed and created the Main menu, About, and How to pages. 
+                            We utilized PyGame and I gained my first experience in OOP through this project.
+                        </p>
+                    </div>
+
+                    <img src="images/space_shooter/space_shooter_hero_pic.png" alt="about image" class="about__img">
+
+                    <!-- First section -->
+                        <div class="project__data">
+                            <h2 class="section__title">Space Shooters: Demo</h2>
+    
+                            <p class="project_description">
+                                The final project as a two-player game where players each control their own ships and shooot at each other until their health drops. 
+                                The game was made to be two-player to create a more engaging game that can be played with friends.
+                            </p>
+                        </div>
+
+                        <div class="container">
+                            <video controls muted loop width="100%" height="auto">
+                                <source src="videos/space_shooter/space_shooter_demo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <!-- Second section -->
+                        <div class="project__data">
+                            <h2 class="section__title">Space Shooter: Prototype</h2>
+    
+                            <p class="project__description">
+                                The first prototype was more similar to our inspiration, Alien Invaders. It involves a one-player versus computer in which the player has to shoot at the incoming aliens
+                                and keep advancing to the next stage, which has infinite levels but gets increasingly harder. The aliens themselves shoot at the player. This prototype did not feature a menu 
+                                and only the game itself.
+                        </div>
+
+                        <div class="container">
+                            <video controls muted loop width="100%" height="auto">
+                                <source src="videos/space_shooter/space_prototype.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                </div>
+            <section class="about section" id="about"></section>
+            <hr>
+                <div class="footer_projects">
+                    <div id="previous_proj"><a href="heritagear.html">&#60; Heritagear</a></div>
+                    <div id="next_proj"><a href="sus_dku.html">Sustainable DKU ></a></div>
+                </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">        
+                <span class="footer__copy">&#169; Copyright Disty Mahmud 2023.</span>
+            </div>
+        </footer>
+        <script src="JS/index.js"></script>
+    </body>
+</html>

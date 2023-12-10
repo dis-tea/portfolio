@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--broswer small icon on tab-->
+        <link rel="shortcut icon" href="images/DM.png" type="image/x-icon">
+
+        <!--NAV TOGGLE ICON!-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="CSS/heritagear.css">
+
+        <title>Heritagear</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="images/DM.png" alt="logo image">
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html#home" class="nav__link">Home</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="index.html#about" class="nav__link">About</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="projects.html" class="nav__link active-link">Projects</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="index.html#contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- Close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-apps-2-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!--MAIN -->
+        <main class="main">
+            <!-- ABOUT -->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h1 class="section__title">Heritagear</h1>
+                        <h1>Game Designer</h1>
+                        <p style="font-style: italic;">Present</p>
+                        <br>
+
+                        <p class="about__description">
+                            I am currently a game designer for Heritagear, a project under Duke Kunshan's Innovation Incubator. It aims to create an immersive historical 
+                            fiction storyline for visitors at the Imperial City of Huế in Vietnam. We plan for visitors to be able to play the game in tandem with exploring the 
+                            historic sites. I am currently working on the main mission and minigames prototypes.
+                        </p>
+                    </div>
+
+                    <img src="images/heritagear/oie_transparent.png" alt="A photo of Heritagear's main mission screen, with text saying Make Phan Nu." class="about__img">
+
+                    <!-- First section -->
+                        <div class="project_data">
+                            <h2 class="section__title">Main Mission</h2>
+    
+                            <p class="contact__description">
+                                The main mission features the user tasked with making Phan Nu, a traditional Vietnamese cosmetic. I created the initial flow
+                                of the game based on videos of how real life phan nu was made. I utilized simple tap and timing mechanics throughout the main mission
+                                to help fit the theme of the creation of phan nu and make the game system not too difficult. It was important to make the game as accessible
+                                for a wide variety of audiences that come to the Imperial City.
+                            </p>
+                        </div>
+
+                        <div class="container">
+                            <video controls muted loop width="100%" height="auto">
+                                <source src="videos/heritagear/MainMissionCompressed.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <!-- Second section -->
+                        <div class="project__data">
+                            <h2 class="section__title">Extra Mission: Making Tea</h2>
+                            <p class="contact__description">
+                                Extra mission one focuses on creating traditional tea. It features more dialogue for the users to get to know other characters
+                                and get to know the world better. The game mechanics are drag, tap, timing, and progress bar.
+                            </p>
+                        </div>
+
+                        <div class="container">
+    
+                            <video controls muted loop width="100%" height="auto">
+                                <source src="videos/heritagear/E1-FULL.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <!-- third section -->
+                        <div class="project__data">
+                            <h2 class="section__title">Extra Mission: Old Buddhism Tales</h2>
+    
+                            <p class="contact__description">
+                                Extra mission two has the players investigate through a collection of stories and choose the correct one for the Queen Mother
+                                based on hints given to them.
+                            </p>
+                        </div>
+
+                        <div class="container">
+                            <video controls muted loop width="100%" height="auto">
+                                <source src="videos/heritagear/extra2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        
+                        <!-- fourth section -->
+                        <div class="project__data">
+                            <h2 class="section__title">Extra Mission: A New Friend</h2>
+    
+                            <p class="contact__description">
+                                Extra Mission 3 is a companion focused quest for the players to get to know a supporting NPC by cleaning the halls.
+                                The game mechanic featured is a visual novel style dialogue in which players will have different responses to choose from
+                                that influences the NPC's responses.
+                            </p>
+                        </div>
+
+                        <div class="container">
+                            <video controls muted loop width="100%" height="auto">
+                                <source src="videos/heritagear/Extra3.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                </div>
+            <section class="about section" id="about"></section>
+            <hr>
+                <div class="footer_projects">
+                    <div id="previous_proj"><a href="city_profile.html">&#60; City Profile</a></div>
+                    <div id="next_proj"><a href="space_shooter.html">Space Shooters ></a></div>
+                </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">        
+                <span class="footer__copy">&#169; Copyright Disty Mahmud 2023.</span>
+            </div>
+        </footer>
+        <script src="JS/index.js"></script>
+    </body>
+</html>

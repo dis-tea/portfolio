@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--BROWSER ICON-->
+        <link rel="shortcut icon" href="images/DM.png" type="image/x-icon">
+
+        <!--NAV TOGGLE ICON!-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="CSS/index.css">
+        <title>Homepage</title>
+    </head>
+    <body>
+        <!--HEADER -->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="images/DM.png" alt="logo image">
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="projects.html" class="nav__link">Projects</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-apps-2-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!--MAIN-->
+        <main class="main">
+            <!--HOME -->
+            <section class="home section" id="home">
+                <h1 id="Hello">Hello!</h1>
+                <p id="details">I am a sophomore at Duke Kunshan University
+                <br>
+                studying Computation and Design with a Digital Media focus</p>
+
+                <img src="images/index/waves.svg" alt="home image" class="waves-white"> 
+            </section>
+
+            <!--ABOUT -->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title">About me!</h2>
+
+                        <p class="about__description">
+                            I am a current college student at Duke Kunshan University studying Computation and Design. I'm particularly interested in game design and smart city design, and I aim to combine both, making public spaces and tools more engaging and encourage citizen participation.
+                            <br>
+                            <br>
+                            I'm originally from Indonesia, but have lived in the US, Saudi Arabia, North Macedonia, and now China. Having the opportunity to experience many different cities in various continents sparked my interest in urban studies. As for games, I have played them since I was 6 when my dad gave me a Game Boy SD that was being given away.
+                            <br>
+                            <br>
+                            Some fun facts: I have a twin sister, I love the color pink, and one of my favorite things in life is my pet cat, Chonky.
+                        </p>
+                    </div>
+
+                    <img src="images/index/headshot_circle.png" alt="about image" class="about__img">
+                </div>
+            </section>
+            <div class="arrow bounce" id="arrow"></div>
+            <!-- Contact -->
+            <section class="contact section" id="contact">
+                <div class="contact__container container grid">
+                    <div class="contact__data">
+                        <h2 class="section__title">Let's get in touch!</h2>
+                        <p class="contact__description">
+                            Feel free to contact me with any questions, comments, or requests for pictures of my cat. 
+                            Here is my <span id="resume_hyperlink"><a href ="images/Resume_Dec2023.pdf" target=”_blank”>Resume</a></span> if you wish to view or download it. 
+                            I also have a <span id="linkedin_hyperlink"><a href="https://www.linkedin.com/in/disty-mahmud-124337210/" target=”_blank”>LinkedIn</a></span> if you prefer to connect that way!
+                        </p>
+                    </div>
+                    <div class="container">
+                        <form action="https://formsubmit.co/aam142@duke.edu" method="POST"></form>
+
+                        <label for="fname"></label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name">
+                
+                        <label for="email"></label>
+                        <input type="text" id="email" name="email" placeholder="Your email">
+                
+                        <label for="reason"></label>
+                        <select id="reason" name="reason">
+                            <option value="question">Question</option>
+                            <option value="collab">Collaboration or work</option>
+                            <option value="other">Other</option>
+                        </select>
+                
+                        <label for="subject"></label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                
+                        <input type="submit" name="submit" value="Submit">
+                
+                        </form>
+                    </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">        
+                <span class="footer__copy">&#169; Copyright Disty Mahmud 2023.</span>
+            </div>
+        </footer>
+        <script src="JS/index.js"></script>
+    </body>
+</html>
