@@ -27,7 +27,7 @@ img {
   height: auto;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/*REUSABLE CSS CLASSES */
 .container {
   max-width: 1024px;
   margin-inline: 1.5rem;
@@ -52,10 +52,10 @@ img {
 }
 
 .main {
-  overflow: hidden; /* For animations */
+  overflow: hidden; 
 }
 
-/*=============== HEADER & NAV ===============*/
+/* HEADER & NAV */
 .header {
   position: fixed;
   width: 100%;
@@ -179,19 +179,29 @@ img {
   justify-self: center;
 }
 
-/* contact */
+/* content */
 .contact__container {
   position: relative;
   row-gap: 3.5rem;
 }
 
-.contact__data {
+.content__data {
   text-align: center;
 }
 
-.contact__description {
+.content__description {
   margin-bottom: 2rem;
   font-size: 1rem;
+}
+
+#fellowship_hyperlink a{
+  color: rgb(255, 163, 163);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#fellowship_hyperlink a:hover{
+  color: palevioletred;
 }
 
 .footer_projects{

@@ -52,7 +52,7 @@ img {
 }
 
 .main {
-  overflow: hidden; /* For animations */
+  overflow: hidden; /* For animations (not used) */
 }
 
 /* HEADER & NAV */

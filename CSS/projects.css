@@ -49,7 +49,7 @@ img {
 }
 
 .main {
-  overflow: hidden; /* For animations */
+  overflow: hidden; /* For animations (not used)*/
   min-height: 100vh;
 }
   
