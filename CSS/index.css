@@ -299,7 +299,7 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
 }
 
-button[type=submit] {
+input[type=submit] {
   background-color: #edad9d;
   font-family: 'Courier New', Courier, monospace;
   color: white;
@@ -326,7 +326,7 @@ button[type=submit] {
 }
 
 
-button[type=submit]:hover {
+input[type=submit]:hover {
   background-color: #d89280;
 }
 
