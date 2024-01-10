@@ -241,6 +241,21 @@ img {
 }
 
 /* CONTACT */
+.contact_links{
+  text-align: center;
+}
+
+.contact_links a{
+  font-size: 3rem;
+  color: rgb(255, 163, 163);
+  font-weight: 600;
+  line-height: 4.5rem;
+}
+
+.contact_links a:hover{
+  color: palevioletred
+}
+
 .contact__container {
   position: relative;
   row-gap: 3.5rem;
