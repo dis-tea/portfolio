@@ -240,6 +240,47 @@ img {
     color: palevioletred;
 }
 
+/*USER TEST IMAGE GALLERY */
+#user_test_gallery {
+  margin: 60px auto;
+  max-width: 1024px;
+  margin-inline: auto; /* This centers the content */
+}
+
+#outer {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.itemwrapper {
+  display: table-cell;
+  vertical-align: top;
+  width: 50%; /* Set to 50% so that two images take equal width side by side */
+  box-sizing: border-box; /* Ensures padding or border doesn't overflow the width */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Ensures no extra space below the image*/
+}
+
+/* Media Query for screens smaller than 640px */
+@media screen and (max-width: 640px) {
+  .itemwrapper {
+    display: block; /* This will stack the images on top of each other */
+    width: 100%; /* Take full width of the container */
+  }
+  #user_test_gallery h2{
+    margin-left: 2rem;
+  }
+  #user_test_gallery p{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
 /* FOOTER */
 .footer {
   overflow: hidden;
