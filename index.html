@@ -1,141 +1,729 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--BROWSER ICON-->
-        <link rel="shortcut icon" href="images/DM.png" type="image/x-icon">
+<html class="no-js ss-preload" lang="en">
+<head>
 
-        <!--NAV TOGGLE ICON!-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Disty Mahmud</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="CSS/index.css">
-        <title>Homepage</title>
-    </head>
-    <body>
-        <!--HEADER -->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="index.html" class="nav__logo">
-                    <img src="images/DM.png" alt="logo image">
-                </a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="projects.html" class="nav__link">Projects</a>
-                        </li>
-                    </ul>
-                    <!-- Close button -->
-                    <div class="nav__close" id="nav-close">
-                        <i class="ri-close-line"></i>
-                    </div>
-                </div>
-                <!-- Toggle button -->
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-apps-2-line"></i>
-                </div>
-            </nav>
-        </header>
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!--MAIN-->
-        <main class="main">
-            <!--HOME -->
-            <section class="home section" id="home">
-                <h1 id="Hello"><span class="auto-type">Hello!</span></h1>
-                <p id="details">I am a dual-degree junior at Duke (Kunshan) University studying Arts and Media
-                <br>
-                </p>
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
 
-                <img src="images/index/waves.svg" alt="home image" class="waves-white"> 
-            </section>
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/icon_180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/icon_32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/icon_16.png">
+    <link rel="manifest" href="site.webmanifest">
 
-            <!--ABOUT -->
-            <section class="about section" id="about">
-                <div class="about__container container grid">
-                    <div class="about__data">
-                        <h2 class="section__title">About Me</h2>
-                        <p class="about__description">
-                            I am a junior interested in the archival justice, digital storytelling, and cultural heritage preservation within the digital huamnities.
-                            <br>
-                            <br>
-                            I'm originally from Indonesia, but have lived in the US, Saudi Arabia, North Macedonia, and now China. Having the opportunity to experience many different cities in various continents sparked my interest in different cultures, peoples, and their stories and combining this with creative coding and digital media.
-                            <br>
-                            <br>
-                            I am currently pursuing a dual-degree at Duke and Duke Kunshan University, studying Arts and Media, with a track in Art and a concentration in Digital Cultures and Communication.
-                        </p>
-                    </div>
-                    <img src="images/index/headshot-cap.png" alt="about image" class="about__img">
-                </div>
-            </section>
-            <div class="arrow bounce" id="arrow"></div>
-            <!-- Contact -->
-            <section class="contact section" id="contact">
-                <div class="contact__container container grid">
-                    <div class="contact__data">
-                        <h2 class="section__title">Let's get in touch!</h2>
-                        <p class="contact__description">
-                            Feel free to connect with me. Click the links to email me, view my LinkedIn or CV.
-                            <br>
-                            <br>
-                            Click "Projects" in the header to view my previous works.
-                        </p>
-                    </div>
-                    <div class="container">
-                        <div class="contact_links">
-                            <a href ="mailto:aam142@duke.edu?subject = Comments&body = Message" target=”_blank”>Email</a></span>
-                            <br>
-                            <a href="https://www.linkedin.com/in/disty-mahmud-124337210/" target=”_blank”>LinkedIn</a></span>
-                            <br>
-                            <a href ="files/DistyMahmudCV.pdf" target=”_blank”>CV</a></span>
-                        </div>
-                    
-<!--                          <form method="post" action="https://forms.un-static.com/forms/2becef1f8c1ca12dbd165c3ff7bbf14c93c1f6a2"></form>
+</head>
 
-                            <label for="fname"></label>
-                            <input type="text" id="fname" name="firstname" placeholder="Your name">
-                    
-                            <label for="email"></label>
-                            <input type="text" id="email" name="email" placeholder="Your email">
-                    
-                            <label for="reason"></label>
-                            <select id="reason" name="reason">
-                                <option value="question">Question</option>
-                                <option value="collab">Collaboration or work</option>
-                                <option value="other">Other</option>
-                            </select>
-                    
-                            <label for="message"></label>
-                            <textarea id="message" name="message" placeholder="Write something.."></textarea>
-                    
-                            <input type="submit" name="submit" value="Submit"> 
-                        </form> -->
-                    </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="footer__container container">        
-                <span class="footer__copy">&#169; Copyright Disty Mahmud 2024.</span>
+<body id="top">
+
+
+    <!-- # preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- # page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+
+        <div class="circles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <!-- ## site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="header-mobile">
+                <span class="mobile-home-link"><a href="index.html">Disty Mahmud.</a></span>
+                <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
             </div>
-        </footer>
-        <script src="JS/index.js"></script>
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <script>
-            var typed = new Typed(".auto-type", {
-                strings: ["Hello!","Halo!","Здраво!","您好!"],
-                typeSpeed: 150,
-                backSpeed: 150,
-                loop: true
-            })
-        </script>
-    </body>
+
+            <div class="row wide main-nav-wrap">
+                <nav class="column lg-12 main-nav">
+                    <ul>
+                        <li><a href="index.html" class="home-link">Disty Mahmud.</a></li>
+                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                        <li><a href="#about" class="smoothscroll">About</a></li>
+                        <li><a href="#works" class="smoothscroll">Works</a></li>
+                        <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header> <!-- end s-header -->
+
+
+        <!-- ## main content
+        ==================================================- -->
+        <main class="s-content">
+
+
+            <!-- ### intro
+            ================================================== -->
+            <section id="intro" class="s-intro target-section">
+
+                <div class="row intro-content wide">
+
+                    <div class="column">
+                        <div class="text-pretitle with-line">
+                            Hello/Halo/您好
+                        </div>
+
+                        <h1 class="text-huge-title">
+                            I am Disty, <br>
+                            an aspiring<br>
+                            digital humanist, <br> 
+                            & storyteller <br>
+                            
+                        </h1>
+                    </div>
+
+                    <ul class="intro-social">
+                        <li><a href="#0">Art</a></li>
+                        <li><a href="www.linkedin.com/in/disty-m-124337210">LinkedIn</a></li>
+                    </ul>
+
+                </div> <!-- end intro content -->
+
+                <a href="#about" class="intro-scrolldown smoothscroll">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
+                </a>
+
+            </section> <!-- end s-intro -->
+
+
+            <!-- ### about
+            ================================================== -->
+            <section id="about" class="s-about target-section">
+
+
+                <div class="row about-info wide" data-animate-block>
+
+                    <div class="column lg-6 md-12 about-info__pic-block">
+                        <img src="images/headShot2.jpg" 
+                             srcset="" alt="" class="about-info__pic" data-animate-el>
+                    </div>
+
+                    <div class="column lg-6 md-12">
+                        <div class="about-info__text" >
+
+                            <h2 class="text-pretitle with-line" data-animate-el>
+                                About
+                            </h2>
+                            <p class="attention-getter" data-animate-el>
+                                I am a college junior originally from Indonesia, but have lived in the US, Saudi Arabia, North Macedonia, and now China. Having the opportunity to experience many cities in various continents sparked my interest in different cultures, peoples, and their stories and combining this with digital media.
+                                I am currently pursuing a dual-degree at Duke and Duke Kunshan University studying Arts and Media.
+                            </p>
+                            <a href="DistyMahmudCV(Most_Recent).pdf" target="_blank" class="btn btn--medium u-fullwidth" data-animate-el>View My CV</a>
+
+                        </div>
+                    </div>
+                </div> <!-- about-info -->
+
+
+                <div class="row about-expertise" data-animate-block>
+                    <div class="column lg-12">
+
+                        <h2 class="text-pretitle" data-animate-el>Interests</h2>
+
+                        <ul class="skills-list h1" data-animate-el>
+                            <li>Archival Justice</li>
+                            <li>Cultural Heritage</li>
+                            <li>Public History</li>
+                            <li>Memory Studies</li>
+                            <li>Creative Computing</li>
+                            <li>Digital Humanities</li>
+                        </ul>
+
+                    </div>
+                </div> <!-- end about-expertise -->
+
+
+                <div class="row about-timelines" data-animate-block>
+
+                    <div class="column lg-6 tab-12">
+
+                        <h2 class="text-pretitle" data-animate-el>
+                            Recent Experiences
+                        </h2>
+
+                        <div class="timeline" data-animate-el>
+
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Duke Kunshan Archives and History Initiative</h3>
+                                    <h5 class="timeline__meta">Student Coordinator</h5>
+                                    <p class="timeline__timeframe">January 2025 - Present</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>Assist in organizing, advertising, documenting events, and providing student-focused feedback.</p>
+                                </div>
+                            </div>
+    
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Duke University Digital Art History & Visual Culture Research Lab</h4>
+                                    <h5 class="timeline__meta">Intern</h5>
+                                    <p class="timeline__timeframe">September - December 2024</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>Supported the creation of a late 19th-century Durham and Duke exhibit through archival research and design feedback for the wall timeline.</p>
+                                </div>
+                            </div>
+    
+                        </div> <!-- end timeline -->
+
+                    </div> <!-- end column -->
+
+                    <div class="column lg-6 tab-12">
+
+                        <h2 class="text-pretitle" data-animate-el>
+                            Education
+                        </h2>
+
+                        <div class="timeline" data-animate-el>
+
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Duke University</h3>
+                                    <h5 class="timeline__meta">Bachelor's of Arts</h5>
+                                    <p class="timeline__timeframe">Expected May 2026</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>Interdisciplinary Studies; Art and Media; Arts track</p>
+                                </div>
+                            </div>
+    
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">Duke Kunshan University</h4>
+                                    <h5 class="timeline__meta">Bachelor's of Arts</h5>
+                                    <p class="timeline__timeframe">Expected May 2026</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>Art and Media major; Arts track; Digital Cultures and Communication concentration</p>
+                                </div>
+                            </div>
+    
+                        </div> <!-- end timeline -->
+                        
+                    </div> <!-- end column -->
+
+
+                </div> <!-- end about-timelines -->
+
+            </section> <!-- end s-about -->
+
+
+            <!-- ### works
+            ================================================== -->
+            <section id="works" class="s-works target-section">
+
+
+                <div class="row works-portfolio">
+
+                    <div class="column lg-12" data-animate-block>
+
+                        <h2 class="text-pretitle" data-animate-el>
+                            Recent Works
+                        </h2>
+                        <p class="h1" data-animate-el>
+                            Here are some of my favorite projects I have done lately:
+                        </p>
+    
+                        <ul class="folio-list row block-lg-one-half block-stack-on-1000">
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-01">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/gallery/livingroomBG.jpg"
+                                             srcset=""  alt="">
+                                    </div>
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Interactive Archive
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Black Arts Movement: The Living Room
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-02">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/gallery/Sépulcre_Arc-en-Barrois_111008_12.jpg" 
+                                             srcset="" alt="">
+                                    </div>
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Digital Essay + Website
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Huzn (حزن) and Recitation 
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-03">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/gallery/OmekaExhibit.png" 
+                                             srcset="" alt="">
+                                    </div>
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Omeka Exhibit
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Indonesian Art in the New Order Era
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-04">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/gallery/heritagear1.jpg"
+                                             srcset="" alt="">
+                                    </div>
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Historical Narrative Game
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Journey of Hue Palace's Maiden (Hành Trình Người Cung Nữ)
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-05">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/gallery/3DworldSS.png" 
+                                             srcset="" alt="">
+                                    </div>
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            3D Modeling
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Children of Enlil
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-06">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/gallery/dataviz-move2.gif" 
+                                             srcset="" alt="">
+                                    </div>
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Data Visualizations + Website
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Charting the Course of Power
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                        </ul> <!-- end folio-list -->
+
+                    </div> <!-- end column -->
+
+
+                    <!-- Modal Templates Popup
+                    -------------------------------------------- -->
+                    <div id="modal-01" hidden>
+                        <div class="modal-popup">
+                            <img src="images/portfolio/gallery/livingroomBG.jpg" alt="">
+                
+                            <div class="modal-popup__desc">
+                                <h5>Black Arts Movement: The Living Room</h5>
+                                <p>Poetry, songs, and musicians of the Black Arts Movement that incoporated Islamic aesthetics and references into their works. I explored the different mediums and how they were consumed by drawing and creating a 1960s-70s living room environment. The interactable objects include books for the poetry, radio for music, and a television that displayed famous Jazz player, John Coltrane during two of his live performances.</p>
+                                <br>
+                                <p>Created for the course, "Islamic Media", taught by Professor Ellen McLarney at Duke University, Fall 2024.</p>
+                                <ul class="modal-popup__cat">
+                                    <li>Unity</li>
+                                    <li>Immersive Environment</li>
+                                    <li>Poetry</li>
+                                    <li>Jazz</li>
+                                    <li>Black Liberation Movement</li>
+                                    <li>Islam</li>
+                                </ul>
+                            </div>
+                
+                            <a href="https://dis-tea.itch.io/islamic-media-bam-living-room" target="_blank" class="modal-popup__details">Itch.io link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-02" hidden>
+                        <div class="modal-popup">
+                            <img src="images/portfolio/gallery/Sépulcre_Arc-en-Barrois_111008_12.jpg" alt="">
+                
+                            <div class="modal-popup__desc">
+                                <h5>Huzn حزن</h5>
+                                <p>I explored the idea of huzn, how its concept is found in Qur'an and recitation, and the impacts it has on the listeners. I pulled literature from various Muslim thinkers and scholars of Islamic studies to better understand the impacts that huzn has on the Islamic community to collate into a website.</p>
+                                <ul class="modal-popup__cat">
+                                    <li>Website</li>
+                                    <li>Islamic Studies</li>
+                                    <li>Essay</li>
+                                </ul>
+                            </div>
+                
+                            <a href="https://huzn-recitation.webflow.io/" target="_blank" class="modal-popup__details">Website link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-03" hidden>
+                        <div class="modal-popup">
+                            <img src="images/portfolio/gallery/OmekaExhibit.png" alt="">
+                
+                            <div class="modal-popup__desc">
+                                <h5>Indonesian Art during the New Order Era</h5>
+                                <p>I created an Omeka site and two exhibits, one focusing on Chinese-Indonesian Artists and their works as a method of resistance, and the other on the Gerakan Seni Rupa Baru (GSRB) or the New Art Movement.</p>
+
+                                <h5>Archival Theories</h5>
+                                <p>My reasoning for creation of the exhibits on the GSRB and Chinese-Indonesian artists were based on the archival theory proposed by Cameroonian historian, Achille Mbembe. In “The Power and Limits of Archives” he writes, “…the archives becomes something that does away with doubt…It is proof that a life truly existed, that something actually happened” (20-21). I was informed by this theory of the archive being a symbol of power and threat to state narratives by being able to tell a part of a story.</p>
+                                    <br>
+                                <p>I was also informed by the idea of “records” written by Micheal Caswell. In his work, <i>"The Archive" is not an Archives: Acknowledging the Intellectual Contributions of Archival Studies</i>, he referenced Archivist Brian Brothman’s argument that, “records and evidence are cleaved by a sense of temporality that cannot be fixed... In this light, evidence is always contextual, always of something for someone...”. This was especially true for the artworks from the Chinese-Indonesian artists who did not overtly go against government restrictions. However, by looking at the scholarship and literature, their works were still able to be analyzed in subtle ways in resistance and how it informs the broader conversation of ethnic relationships both back then and now. </p>
+                                <ul class="modal-popup__cat">
+                                    <li>Omeka</li>
+                                    <li>Indonesian History</li>
+                                    <li>Art History</li>
+                                    <li>New Order Era</li>
+                                </ul>
+                            </div>
+                
+                            <a href="https://gsrbneworder.omeka.net/exhibits" target="_blank" class="modal-popup__details">Exhibits site</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-04" hidden>
+                        <div class="modal-popup">
+                            <div class="modal-popup__video">
+                                <video controls>
+                                    <source src="heritagear_playthru_Compressed.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <!-- <img src="images/portfolio/gallery/heritagear1.jpg" alt=""> -->
+                
+                            <div class="modal-popup__desc">
+                                <h5>Journey of Hue Palace's Maiden</h5>
+                                <p>I was a game designer for Heritagear, a project under Duke Kunshan's Innovation Incubator. It aimed to create an immersive historical 
+                                    fiction storyline for visitors at the Imperial City of Huế in Vietnam.</p>
+                                
+                                    <h5>Main Mission</h5>
+                                <p>The main mission features the user tasked with making Phan Nu, a traditional cosmetic. I created the initial flow of the game based on videos of how real life phan nu was made. 
+                                    I utilized simple tap and timing mechanics throughout the main mission to help fit the theme of the creation of phan nu and make the game system not too difficult. 
+                                    It was important to make the game as accessible for a wide variety of audiences that come to the Imperial City.</p>
+                                
+                                    <h5>Extra Mission #1: Making Tea</h5>
+                                <p>Extra mission one focuses on creating traditional tea. It features more dialogue for the users to get to know other characters and get to know the world better. 
+                                    The game mechanics are drag, tap, timing, and progress bar.</p>
+                                
+                                    <h5>Extra Mission #2: Old Buddhism Tales</h5>
+                                <p>Extra mission two has the players investigate through a collection of stories and choose the correct one for the Queen Mother based on hints given to them.</p>
+                                
+                                <h5>Extra Mission #3: Making a New Friend</h5>
+                                <p>Extra Mission 3 is a companion focused quest for the players to get to know a supporting NPC by cleaning the halls. The game mechanic featured is a visual novel style dialogue 
+                                    in which players will have different responses to choose from that influences the NPC's responses.</p>
+                                
+                                <h5>User Testing</h5>
+                                <p>December 2023, the team based in Vietnam took the prototype to the Forbidden City in Huế. Utilizing QR codes for the different missions, participants walked through the site whilst playing the prototype.</p>
+                                <img src="images/portfolio/heritagear_table.jpg" alt="">
+                                <img src="images/portfolio/heritagear_peoplescan.jpg" alt="">
+                                <img src="images/portfolio/heritagear_girlscan.jpg" alt="">
+
+
+                                <ul class="modal-popup__cat">
+                                    <li>Historical-fiction</li>
+                                    <li>Vietnamese History</li>
+                                    <li>Story</li>
+                                    <li>Game</li>
+                                </ul>
+                            </div>
+                
+                            <a href="https://www.youtube.com/watch?v=b1eZ1G53Aaw" target="_blank" class="modal-popup__details">Game Trailer</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-05" hidden>
+                        <div class="modal-popup">
+
+                            <img src="images/portfolio/gallery/3d-model.gif" alt="">
+                
+                            <div class="modal-popup__desc">
+                                <h5>Children of Enlil</h5>
+                                <p>For the course, <i>3D Modeling and Animation</i>, I and two other students gruoped to build a mini 3D fantasy world environment scene. 
+                                    The city, Enlil, is inspired by Sumerian mythology and architecture. The city was once a flourishing land, blessed by the God, Enlil. 
+                                    However, tragedy struck and the city now remains a desolate wasteland, with a dragon watching over the land on top of the city's Ziggurat.</p>
+                                    <br>
+                                    <p>The modeling was done in Blender, with the exception of the city's statues and dragon done on ZBrush. Inspiration came loosely from Sumerian art and culture. 
+                                    Texture was obtained through Polyhaven, Polligon, and BlenderKit (a Blender plug-in).</p>
+                                
+                                <ul class="modal-popup__cat">
+                                    <li>3D Modeling</li>
+                                    <li>Blender</li>
+                                    <li>Mesopotamian</li>
+                                    <li>Mythology</li>
+                                    <li>Fantasy</li>
+                                    <li>Art</li>
+                                </ul>
+                            </div>
+                
+                            <!-- <a href="https://www.behance.net/" class="modal-popup__details">View Visualizations</a> -->
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-06" hidden>
+                        <div class="modal-popup">
+                            <div class="modal-popup__video">
+                                <video controls>
+                                    <source src="data-vis-video.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <!-- <img src="images/portfolio/gallery/dataviz-move2.gif" alt=""> -->
+                
+                            <div class="modal-popup__desc">
+                                <h5>Charting the Course of Power</h5>
+                                <p>For my group final in my course, <i>Data Visualizations and Information Aesthetic</i>, my partner and I created 6 different types of visualizations 
+                                    to showcase a dataset on the demographics of the US congress over time. Each visualization includes at least two user interactions. We utlized both Python 
+                                    packages and online visualization software to clean and create these visualizations. The end result was a poster showcase and a website to serve as a visualization dashboard.</p>
+                                <br>
+                                <h5>Why Congress?</h5>
+                                <p>We focused on the evolutions of the demographics of the US Congress to visualize if and in what ways has the seats of Congress changed in regards to race, gender, and age. 
+                                    As factors such as these are historically used for discrimination, we wondered if the changing political landscape and powers reflected that of the US population. Our main research question was:
+                                    How has the demographics and representation of Congress representatives evolved over time?</p>
+                                <br>
+                                <h5>The Dataset</h5>
+                                <p>The dataset was gathered from Harvard's Dataverse. It can be found here: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CI2EPI
+                                <br>
+                                The dataset was cleaned using Python Pandas to omit irrelevant data, handle missing values, and create calculated fields needed for some visualizations. The final dataset consists of 9411 instances and 46 attributes. A statistical analysis was also done to ensure validity in our research questions, such as t-tests using Python SciPy Stats.</p>
+                                
+                                <ul class="modal-popup__cat">
+                                    <li>Branding</li>
+                                    <li>Data visualization</li>
+                                    <li>Information aesthetics</li> 
+                                    <li>Tableau</li>
+                                    <li>Python</li>
+                                    <li>QGIS</li>
+                                    <li>Florish</li>
+                                </ul>
+                            </div>
+                
+                            <a href="https://infosci301.github.io/congress-visualizations/" target="_blank" class="modal-popup__details">View Visualizations</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                </div> <!-- end works-portfolio -->
+
+
+                 <div class="row testimonials">
+                    <!-- <div class="column lg-12" data-animate-block>
+        
+                        <div class="swiper-container testimonial-slider" data-animate-el>
+        
+                            <div class="swiper-wrapper">
+
+                                <div class="testimonial-slider__slide swiper-slide">
+                                    <div class="testimonial-slider__author">
+                                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                        <cite class="testimonial-slider__cite">
+                                            <strong>Tim Cook</strong>
+                                            <span>CEO, Apple</span>
+                                        </cite>
+                                    </div>
+                                    <p>
+                                    Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
+                                    Explicabo a quaerat sint autem dolore ducimus ut consequatur neque.  Nisi dolores quaerat fuga rem nihil nostrum.
+                                    Laudantium quia consequatur molestias delectus culpa.
+                                    </p>
+                                </div>  
+                
+                                <div class="testimonial-slider__slide swiper-slide">
+                                    <div class="testimonial-slider__author">
+                                        <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                        <cite class="testimonial-slider__cite">
+                                            <strong>Sundar Pichai</strong>
+                                            <span>CEO, Google</span>
+                                        </cite>
+                                    </div>
+                                    <p>
+                                    Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                                    Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
+                                    Quasi voluptas eius distinctio. Atque eos maxime.
+                                    </p>
+                                </div>  
+                
+                                <div class="testimonial-slider__slide swiper-slide">
+                                    <div class="testimonial-slider__author">
+                                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                        <cite class="testimonial-slider__cite">
+                                            <strong>Satya Nadella</strong>
+                                            <span>CEO, Microsoft</span>
+                                        </cite>
+                                    </div>
+                                    <p>
+                                    Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                                    Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
+                                    Voluptatem dignissimos ut.
+                                    </p>
+                                </div> 
+        
+                                <div class="testimonial-slider__slide swiper-slide">
+                                    <div class="testimonial-slider__author">
+                                        <img src="images/avatars/user-06.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                        <cite class="testimonial-slider__cite">
+                                            <strong>Jeff Bezos</strong>
+                                            <span>CEO, Amazon</span>
+                                        </cite>
+                                    </div>
+                                    <p>
+                                    Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis 
+                                    quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti expedita voluptas odit. 
+                                    Nihil ea quia nesciunt. Ducimus aut sed ipsam.
+                                    </p>
+                                </div> 
+            
+                            </div>  
+        
+                            <div class="swiper-pagination"></div>
+        
+                        </div> 
+        
+                    </div> -->
+                </div>  
+
+            </section> 
+
+
+            <!-- ### contact
+            ================================================== -->
+            <section id="contact" class="s-contact target-section">
+
+                <div class="row contact-top">
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle">
+                            Get In Touch
+                        </h2>
+
+                        <p class="h1">
+                            Whether you have a question, want to collaborate, or
+                            want to chat — send me a message.
+                        </p>
+                    </div>
+                </div> <!-- end contact-top -->
+
+                <div class="row contact-bottom">
+                    <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
+                        <h3 class="text-pretitle">Reach me at</h3>
+                        <p class="contact-links">
+                            <a href="mailto:sayhello@luther.com" class="mailtoui">aam142@duke.edu</a> <br>
+                            <a href="tel:+1975432345">WeChat: kooweh19</a>
+                        </p>
+                    </div>
+                    <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
+                        <h3 class="text-pretitle">Let's Connect</h3>
+                        <ul class="contact-social">
+                            <li><a href="#0">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    <div class="column lg-4 md-12 contact-block">
+                        <a href="mailto:aam142@duke.edu" class="mailtoui btn btn--medium u-fullwidth contact-btn">Say Hello!</a>
+                    </div>
+                </div> <!-- end contact-bottom -->
+
+            </section> <!-- end contact -->
+
+        </main> <!-- end s-content -->
+
+
+        <!-- ## footer
+        ================================================== -->
+        <footer class="s-footer">
+
+            <div class="row">
+                <div class="column ss-copyright">
+                    <span>© Disty Mahmud 2025 | Template by <a href="https://www.styleshout.com" target="_blank">StyleShout</a></span> 
+                </div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+        </footer> <!-- end s-footer -->
+
+    </div> <!-- end -s-pagewrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
 </html>
