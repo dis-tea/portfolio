@@ -126,6 +126,7 @@
      * generated using 
      * Tint & Shade Generator 
      * (https://maketintsandshades.com/)
+     original pink: FAA58F;
      */
     --color-black   : #000000;
     --color-gray-19 : #020202;
@@ -137,7 +138,7 @@
     --color-gray-13 : #0e0f0f;
     --color-gray-12 : #101112;
     --color-gray-11 : #121314;
-    --color-gray-10 : #FAA58F;
+    --color-gray-10 : #ac8986;
     --color-gray-9  : #2c2c2d;
     --color-gray-8  : #434445;
     --color-gray-7  : #5b5b5c;
