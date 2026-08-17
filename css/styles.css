@@ -2687,7 +2687,7 @@ img.u-pull-left {
 }
 
 .text-huge-title {
-    --text-huge : 10.8rem;
+    --text-huge : 9rem;
     font-size   : var(--text-huge);
     line-height : 1.0740;
     margin-top  : 0;
